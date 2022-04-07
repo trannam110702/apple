@@ -1,0 +1,59 @@
+
+@media (max-width: 833px) {
+#gn-header {
+    display: flex;
+    justify-content: space-between;
+}
+.gn-list {
+    display: none;
+}
+.ft-end-ect {
+    flex-direction: column;
+}
+.ft-end-list {
+    flex-direction: column;
+}
+.ft-end-item:first-child {
+    padding: 0 10px;
+}
+.ft-end-ect li:nth-child(n) {
+    border: none;
+}
+}
+@media (max-width: 768px) {
+#dn-content {
+    flex-direction: column;
+}
+#dn-text {
+    margin-top: 4px;
+    margin-left: 0;
+    width: 215px;
+    text-align: center;
+}
+.pd-list {
+    grid-template-columns: auto;
+}
+#ft-nav {
+    flex-flow: column;
+}
+#pd-title-img2 {
+    width: 260px;
+    height: 108px;
+    background-size: 260px 108px;
+}
+@media (max-width: 1024px) {
+    #ipad-air .sl-img {
+        background-image: url(https://www.apple.com/v/home/am/images/heroes/ipad-air/hero_ipadair_avail__dsqv5nn0tpsi_medium_2x.jpg);
+        width: 1068px;
+        height: 617px;
+        background-size: 1069px 617px;
+        background-repeat: no-repeat;
+    }
+    #ipad-air .sl-title {
+        left: 50%;
+        transform: translatex(-50%);
+        padding-top: 44px;
+        top: 0;
+    }
+}
+}

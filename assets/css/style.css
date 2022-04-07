@@ -1,0 +1,387 @@
+:root {
+    --nav-height: 44px;
+    --link-color: #06c;
+}
+body {
+    font-size: 14px;
+}
+* {
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    box-sizing: border-box;
+}
+p {
+    margin: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.hidden {
+    display: none;
+}
+#main {
+    max-width: 2650px;
+    margin: auto;
+}
+#globalnav {
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+    z-index: 5;
+}
+.gn-content {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+.gn-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #f5f5f7;
+    font-size: 12px;
+}
+.gn-item {
+    height: var(--nav-height);
+}
+.gn-link {
+    opacity: 0.8;
+    line-height: var(--nav-height);
+    transition: opacity ease-in .2s;
+    display: block;
+    height: var(--nav-height);
+}
+.gn-link:hover {
+    opacity: 1;
+}
+.gn-item {
+    line-height: var(--nav-height);
+    padding: 0 8px;
+}
+#gn-logo {
+    font-size: 18px;
+}
+.gn-item .gn-icon {
+    font-size: 14px;
+}
+#gn-header {
+    color: #f5f5f7;
+    height: var(--nav-height);
+    display: none;
+}
+.hd-icon {
+    line-height: var(--nav-height);
+    padding: 0 16px;
+    cursor: pointer;
+    font-size: 18px;
+}
+/* Main */
+main {
+    padding-top: var(--nav-height);
+    width: 100%;
+}
+.homepage-section {
+    width: 100%;
+}
+#donate {
+    background-color: #fbfbfd;
+    padding: 20px 0;
+}
+#dn-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dn-img {
+    margin: 0;
+    width: 122px;
+    height: 32px;
+    background-size: 122px 32px;
+    background-image: url(https://www.apple.com/v/home/am/images/logos/unicef-relief-fund/unicef_logo_dark__ejvlglygb3ee_large.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#dn-text {
+    color: var(--link-color);
+    margin-left: 14px;
+    line-height: 1.47059;
+}
+#dn-text:hover {
+    text-decoration: underline;
+}
+/* sliders */
+#sliders {
+    display: flex;
+    flex-flow: column;
+}
+.sl-wrap-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+.sl-content {
+    width: auto;
+    height: 580px;
+    position: relative;
+}
+.sl-title {
+    padding-top: var(--nav-height);
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+}
+.sl-title-img {
+    width: 191px;
+    height: 48px;
+    background-size: 191px 48px;
+    margin: 10px auto;
+}
+.sl-decor {
+    font-size: 18px;
+}
+.sl-header {
+    font-size: 56px;
+    margin: 0;
+}
+.sl-subhead {
+    font-size: 28px;
+    margin: 0;
+}
+.sl-links {
+    font-size: 21px;
+    color: var(--link-color);
+    width: fit-content;
+    margin-top: 0.65em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+.sl-link {
+    margin: 0 10px;
+    pointer-events: all;
+}
+.sl-link:hover {
+    text-decoration: underline;
+}
+.sl-link-icon {
+    margin-left: 6px;
+}
+.sl-img-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+}
+.sl-img {
+    margin: 0;
+    width: 3008px;
+    height: 624px;
+    background-size: 3008px 624px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: calc(50%);
+    transform: translatex(-50%);
+    bottom: 0;
+}
+#ipad-air p {
+    color: #f5f5f7;
+}
+#ipad-air .sl-img {
+    background-image: url(https://www.apple.com/v/home/am/images/heroes/ipad-air/hero_ipadair_avail__dsqv5nn0tpsi_large.jpg);
+}
+#ipad-air .sl-title {
+    width: fit-content;
+    top: 50%;
+    transform: translatey(-50%);
+    padding: 0;
+    right: calc(50% + 156px);
+}
+/* products */
+#products {
+    padding: 12px;
+}
+.pd-list {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto auto;
+    gap: 12px;
+}
+.pd-item {
+    position: relative;
+}
+.pd-wrap-link {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 580px;
+    z-index: 1;
+}
+.pd-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1;
+    pointer-events: none;
+    min-width: 320px;
+    overflow: hidden;
+}
+.pd-header {
+    font-size: 40px;
+    margin: 53px 0 4px 0;
+}
+.pd-subhead {
+    font-size: 21px;
+}
+.pd-links {
+    font-size: 17px;
+    margin-top: 12px;
+    color: var(--link-color);
+    pointer-events: all;
+}
+.pd-link {
+    margin: 0 10px;
+}
+.pd-link:hover {
+    text-decoration: underline;
+}
+.pd-img-wrapper {
+    width: 100%;
+    height: 580px;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.pd-img {
+    width: 1262px;
+    height: 580px;
+    background-size: 1262px 580px;
+    background-repeat: no-repeat;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.pd-title-img {
+    margin: 53px auto 12px auto;
+}
+#apple-watch-series7 .pd-title-img {
+    width: 146px;
+    height: 56px;
+    background-size: 146px 56px;
+    background-repeat: no-repeat;
+}
+#apple-card .pd-title-img {
+    width: 125px;
+    height: 35px;
+    background-size: 125px 35px;
+    background-repeat: no-repeat;
+}
+#pd-title-img1 {
+    width: 80px;
+    height: 31px;
+    background-size: 80px 31px;
+    background-repeat: no-repeat;
+}
+#pd-title-img2 {
+    width: 395px;
+    height: 125px;
+    background-size: 395px 125px;
+    background-repeat: no-repeat;
+    margin-top: 282px;
+}
+#tv .pd-links {
+    font-size: 21px;
+    font-weight: 550;
+    margin-top: 27px;
+}
+/* footer */
+footer {
+    background-color: #f5f5f7;
+    color: #6e6e73;
+    padding: 12px 22px;
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Apple Legacy Chevron","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.ft-content {
+    max-width: 980px;
+    margin: auto;
+}
+.ft-heading {
+    font-size: 1em;
+}
+.ft-heading-para {
+    padding-bottom: 9px;
+}
+#ft-nav {
+    border-top: 1px solid #d2d2d7;
+    padding-top: -4px;
+    color: #1d1d1f;
+    display: flex;
+}
+.ft-nav-column {
+    flex: 1;
+}
+.ft-nav-list {
+    padding-top: 24px;
+}
+.ft-nav-list-title {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    cursor: default;
+}
+.ft-nav-item {
+    padding: 6px 0;
+}
+.ft-nav-link:hover {
+    text-decoration: underline;
+}
+.ft-end {
+    padding: 34px 0 21px 0;
+}
+.ft-end-more {
+    border-bottom: 1px solid #d2d2d7;
+    padding-bottom: 8px;
+}
+.ft-end-link {
+    color: var(--link-color);
+}
+.ft-end-link:hover {
+    text-decoration: underline;
+}
+.ft-end-ect {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+.ft-end-list {
+    display: flex;
+}
+.ft-end-ect li:nth-child(n) {
+    border-right: 1px solid #d2d2d7;
+}
+.ft-end-ect li:last-child {
+    border-right: none;
+}
+.ft-end-item {
+    display: block;
+    padding: 0 10px;
+}
+.ft-end-item:first-child {
+    padding: 0 10px 0 0;
+}
