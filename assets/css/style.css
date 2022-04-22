@@ -195,6 +195,9 @@ main {
     transform: translatex(-50%);
     bottom: 0;
 }
+#iphone-13-pro .sl-img {
+    background-image: url(https://www.apple.com/v/home/am/images/heroes/iphone-13-pro-avail/hero_iphone13pro_avail__iy77cld0zwii_large.jpg);
+}
 #ipad-air p {
     color: #f5f5f7;
 }

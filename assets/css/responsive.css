@@ -41,6 +41,7 @@
     height: 108px;
     background-size: 260px 108px;
 }
+}
 @media (max-width: 1024px) {
     #ipad-air .sl-img {
         background-image: url(https://www.apple.com/v/home/am/images/heroes/ipad-air/hero_ipadair_avail__dsqv5nn0tpsi_medium_2x.jpg);
@@ -55,5 +56,4 @@
         padding-top: 44px;
         top: 0;
     }
-}
 }
